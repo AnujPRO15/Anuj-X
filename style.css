@@ -1,0 +1,264 @@
+
+body{
+    /* touch-action: pan-x;
+    touch-action: pan-y; */
+    margin: 0;
+    padding: 0;
+/* 
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 77%);
+    touch-action: pan-y; */
+ }
+
+
+ .headerone{
+  text-shadow:0 0 5px rgb(0, 136, 255);
+  /* text-decoration:underline; I didn't use this because gap is low */
+  position:relative;
+  }
+  .headerone:before{
+  content:'';
+  position:absolute;
+  bottom:-2px;
+  left:0;
+  width:100%;
+  height:2px;
+  background:#1195f4;
+  box-shadow:0 0 5px #1195f4;
+  }
+
+ /* .contact{
+    background: linear-gradient(90deg, rgb(96, 187, 244) 0%, rgb(200, 238, 255) 77%);
+width: 300px;
+padding: 50px;
+margin: 20px;
+} */
+
+    @media screen and (max-width: 767px) {
+      .new{
+        border: 5px solid;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        margin: 25px;
+      }
+      
+
+
+      
+    .name{
+    font-size: 19px;
+    font-weight: 700;
+    top: 0;   
+    }
+    .a{          
+    font-weight: 700;      
+    }
+    .pw{
+      background-color: burlywood;
+    font-size: 9px;
+    padding: 5px;
+    }
+    .first{
+    border: 1px  ;
+    font-size: 10px;                       
+    }
+    .sec{
+    border: 1px;     
+    font-size: 9px;    
+    }
+    .third{
+    margin-left: 10px;
+    }
+    .Professional{
+      color: red;
+
+    }
+   
+    .fourth{         
+      font-size: 20px;
+      border: 1px solid;
+      border-top: none;
+      padding: 10px;
+      margin-left: 4px;
+    
+    }
+   
+    .contact{
+      background-image: linear-gradient(rgb(0, 162, 255), rgb(238, 238, 201));
+      font-size:8px;
+        border: 2px double black;
+        width: 110px;
+        height: 70px;
+    
+        text-decoration: none;
+       
+        /* padding-top: 10px; */
+    }
+    .link{
+        font-size: 7.5px;
+    }
+    .Academic{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .Certdication{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .Contact2{
+        margin-left: 3px;
+      
+    }
+    .img1{
+        border-radius: 100%;
+    }
+    }
+
+
+
+    @media screen and (min-width: 1024px) {
+      .new{
+        border: 5px solid;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        margin: 25px;
+      }
+      
+    
+        .name{
+    font-size: 40px;
+    font-weight: 700;
+    top: 0;   
+    }
+    .a{      
+    font-size: 20px;  
+    font-weight: 700;      
+    }
+    .pw{
+      background-color:burlywood;
+    font-size: 20px;
+    padding: 9px;
+    }
+    .first{
+    border: 1px  ;
+    font-size: 15px;                       
+    }
+    .sec{
+        
+    border: 1px;     
+    font-size: 15px;    
+    }
+   
+    .ab{
+        background-color:burlywood;
+        font-size: 25px;
+    font-weight: 700;           
+    border: 1px solid ;
+
+    }
+    .fourth{         
+    font-size: 20px;
+    border: 1px solid;
+    border-top: none;
+    padding: 10px;
+   
+    }
+   
+
+    
+    .contact{
+        background-image: linear-gradient(rgb(0, 162, 255), rgb(238, 238, 201));
+        font-size:15px;
+        border: 2px double black;
+        width: 200px;
+        height: 130px;
+        text-decoration: none;           
+        padding-top: 10px;
+    }
+    
+    .Academic{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .Certdication{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .Contact2{
+        margin-left: 3px;
+      
+    }
+    .link{
+        font-size: 15px;
+    }
+    }
+
+
+
+
+/* .switch-name {
+
+    --dark-sky: #5050e5;
+    --moon: #ffd365;
+    --light-sky: #35d5e5;
+    --sun: #ffed89;
+    display: inline-block;
+    position: relative;
+    border-radius: 5em;
+    cursor: pointer;
+    width: px;
+    height: 50px;
+    overflow: hidden;
+    transition: all .5s;
+  }
+  
+  .switch-name .back {
+    background-color: var(--dark-sky);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .5s ease-in-out;
+  }
+  
+  .switch-name .checkbox {
+    opacity: 0;
+  }
+  
+  .switch-name .checkbox:checked ~ .back {
+    background-color: var(--light-sky);
+  }
+  
+  .switch-name .checkbox:checked ~ .moon {
+    transform: translate(100%) rotate(180deg);
+    opacity: 0;
+  }
+  
+  .switch-name .checkbox:checked ~ .sun {
+    transform: translate(100%) rotate(180deg);
+    opacity: 1;
+  }
+  
+  .switch-name .moon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    
+    padding: .4em;
+    fill: var(--moon);
+    transition: .5s;
+  }
+  
+  .switch-name .sun {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: .4em;
+    fill: var(--sun);
+    transition: .5s;
+    opacity: 0;
+  } */
